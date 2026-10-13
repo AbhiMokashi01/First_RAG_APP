@@ -11,6 +11,7 @@ from langchain_core.documents import Document
 
 def file_loading(path:str)->list[Document]:
     try:
+        print("inside file loading")
         file_loader=DirectoryLoader(path=path,glob="**/*.pdf",loader_cls=PyMuPDFLoader,show_progress=True)
         documents=file_loader.load()
         print(f"{len(documents)}documents loaded successfully")
