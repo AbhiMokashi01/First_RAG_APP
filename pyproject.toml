@@ -1,0 +1,20 @@
+[project]
+name = "rag-application"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AbhiMokashi01", email = "abhishekmokashi0102@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pymupdf>=1.28.2",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+rag-application = "rag_application:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
