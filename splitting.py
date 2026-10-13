@@ -20,8 +20,4 @@ def split_documents(documents, chunk_size=1000, chunk_overlap=200)->list[str]:
         print(f"Content: {split_docs[0].page_content[:200]}...")
         print(f"Metadata: {split_docs[0].metadata}")
 
-    documents_texts=[]
-    for doc in split_docs:
-        documents_texts.append(doc.page_content)
-
-    return documents_texts
+    return split_docs
