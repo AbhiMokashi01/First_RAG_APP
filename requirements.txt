@@ -2,3 +2,4 @@ PyMuPDF
 sentence-transformers
 numpy
 langchain-community
+chromaDB
