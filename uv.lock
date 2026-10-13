@@ -702,12 +702,14 @@ name = "rag-application"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "numpy" },
     { name = "pymupdf" },
     { name = "sentence-transformers" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "numpy", specifier = ">=2.5.4" },
     { name = "pymupdf", specifier = ">=1.28.2" },
     { name = "sentence-transformers", specifier = ">=6.1.0" },
 ]
