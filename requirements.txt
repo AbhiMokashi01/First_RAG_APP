@@ -3,3 +3,6 @@ sentence-transformers
 numpy
 langchain-community
 chromaDB
+python-dotenv
+langchain
+langchain-groq
